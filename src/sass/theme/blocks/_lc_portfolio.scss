@@ -1,0 +1,44 @@
+.masonry-gallery {
+    margin: 0 -0.5rem; // Adjust spacing between columns
+    display: flex;
+    flex-wrap: wrap;
+
+    .masonry-item {
+        padding: 0.5rem; // Add spacing around items
+
+        &:hover {
+            a {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // Add shadow on hover
+            }
+            img {
+                transform: scale(1.03); // Slight zoom effect on hover
+            }
+        }
+
+        a {
+            display: block;
+            border-radius: 8px; // Rounded corners for images
+            overflow: hidden;
+            transition: box-shadow var(--transition);
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                object-fit: cover; // Ensure images fit nicely
+                border-radius: 8px; // Match the parent border-radius
+                overflow: hidden;
+                transition: transform var(--transition);
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    .masonry-gallery {
+        .masonry-item {
+            padding: 0.25rem; // Reduce spacing on smaller screens
+        }
+    }
+}

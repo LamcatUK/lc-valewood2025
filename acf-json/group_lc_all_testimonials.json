@@ -1,0 +1,23 @@
+{
+  "key": "group_lc_all_testimonials",
+  "title": "LC All Testimonials",
+  "fields": [
+    {
+      "key": "field_lc_all_testimonials_title",
+      "label": "LC All Testimonials",
+      "name": "title",
+      "type": "message"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/lc-all-testimonials"
+      }
+    ]
+  ],
+  "active": 1,
+  "description": ""
+}
