@@ -182,14 +182,14 @@ for (; i < all.length; i++) {
 .schema-faq-section {
     margin: 2rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--col-sage-100);
+    border-bottom: 1px solid var(--col-primary-100);
 }
 .schema-faq-question {
     font-family: var(--ff-heading);
     font-size: var(--fs-600);
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--col-sage-500);
+    color: var(--col-primary-500);
 }
 .schema-faq-answer {
     font-family: var(--ff-body);

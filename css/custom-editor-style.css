@@ -15,20 +15,22 @@
   --hsl-grey-100: 0 0% 94%;
   --col-grey-100: hsl(var(--hsl-grey-100));
   /* Brand Colours: Option 1 – Sage & Neutrals */
-  --hsl-sage-500: 89 15% 48%;
-  --col-sage-500: hsl(var(--hsl-sage-500));
-  --hsl-sage-400: 89 15% 61%;
-  --col-sage-400: hsl(var(--hsl-sage-400));
-  --hsl-sage-300: 89 16% 72%;
-  --col-sage-300: hsl(var(--hsl-sage-300));
-  --hsl-sage-100: 89 30% 92%;
-  --col-sage-100: hsl(var(--hsl-sage-100));
-  --hsl-sand-400: 36 25% 76%;
-  --col-sand-400: hsl(var(--hsl-sand-400));
-  --hsl-sand-300: 36 30% 86%;
-  --col-sand-300: hsl(var(--hsl-sand-300));
-  --hsl-sand-100: 36 40% 94%;
-  --col-sand-100: hsl(var(--hsl-sand-100));
+  /* Brand Colours: Option 2 – Soft Navy & Warm Ivory */
+  /* Brand Colours: Option 3 – Slate & Copper */
+  --hsl-primary-500: 210 10% 20%;
+  --hsl-primary-400: 210 10% 40%;
+  --hsl-primary-300: 210 10% 70%;
+  --hsl-primary-100: 210 10% 95%;
+  --hsl-secondary-400: 24 60% 60%;
+  --hsl-secondary-300: 24 70% 75%;
+  --hsl-secondary-100: 24 80% 90%;
+  --col-primary-500: hsl(var(--hsl-primary-500));
+  --col-primary-400: hsl(var(--hsl-primary-400));
+  --col-primary-300: hsl(var(--hsl-primary-300));
+  --col-primary-100: hsl(var(--hsl-primary-100));
+  --col-secondary-400: hsl(var(--hsl-secondary-400));
+  --col-secondary-300: hsl(var(--hsl-secondary-300));
+  --col-secondary-100: hsl(var(--hsl-secondary-100));
   /* Font Sizes */
   --base-font-size: 16px;
   --fs-300: 0.8rem;

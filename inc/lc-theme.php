@@ -19,18 +19,27 @@ if ( ! defined( 'LC_COLOUR_PALETTE' ) ) {
 	define(
         'LC_COLOUR_PALETTE',
         array(
-            'white'    => '#ffffff',
-            'grey-100' => '#efefef',
-            'grey-200' => '#d9d9d9',
-            'grey-300' => '#999999',
-            'grey-400' => '#666666',
-            'sand-100' => '#f5f1e6',
-            'sand-300' => '#e8e0cd',
-            'sand-400' => '#d8cdb6',
-            'sage-100' => '#eff1ec',
-            'sage-300' => '#cdd3c3',
-            'sage-400' => '#a2ac94',
-            'sage-500' => '#4c5b4d',
+            'white'         => '#ffffff',
+            'grey-100'      => '#efefef',
+            'grey-200'      => '#d9d9d9',
+            'grey-300'      => '#999999',
+            'grey-400'      => '#666666',
+            // option 1 - sage/sand.
+            // 'primary-100'   => '#eff1ec',
+            // 'primary-300'   => '#cdd3c3',
+            // 'primary-400'   => '#a2ac94',
+            // 'primary-500'   => '#4c5b4d',
+            // 'secondary-100' => '#f5f1e6',
+            // 'secondary-300' => '#e8e0cd',
+            // 'secondary-400' => '#d8cdb6',
+            // option 2 - navy/ivory.
+            'primary-100'   => '#e9edf0',
+            'primary-300'   => '#90a3b5',
+            'primary-400'   => '#50667d',
+            'primary-500'   => '#2a3a4d',
+            'secondary-100' => '#fbf9f1',
+            'secondary-300' => '#f6f1e4',
+            'secondary-400' => '#ede2c8',
         )
     );
 }

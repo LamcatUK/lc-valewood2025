@@ -41,7 +41,7 @@
             left: 0;
             font-size: 25rem;
             line-height: 1;
-            color: var(--col-sage-100);
+            color: var(--col-primary-100);
             opacity: 1;
             pointer-events: none;
             z-index: -1;
@@ -50,7 +50,7 @@
     }
 
     .testimonial-author {
-        color: var(--col-sage-400);
+        color: var(--col-primary-400);
         font-size: var(--fs-400);
         font-weight: var(--fw-500);
         letter-spacing: 0.02em;
@@ -59,16 +59,16 @@
 
     .splide__arrow {
         background: none;
-        color: var(--col-sage-400);
+        color: var(--col-primary-400);
         transition: color var(--transition);
 
         &:hover {
-            color: var(--col-sage-300);
+            color: var(--col-primary-300);
         }
     }
 
     .splide__pagination__page.is-active {
-        background: var(--col-sage-400);
+        background: var(--col-primary-400);
     }
 }
 

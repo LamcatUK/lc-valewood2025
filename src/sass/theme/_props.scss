@@ -26,27 +26,39 @@ $col-light: #f2f2f2;
     --col-grey-100: hsl(var(--hsl-grey-100));
 
     /* Brand Colours: Option 1 – Sage & Neutrals */
+    // --hsl-primary-500: 89 15% 48%; // #4C5B4D – sage green
+    // --hsl-primary-400: 89 15% 61%; // #A2AC94 – accent green
+    // --hsl-primary-300: 89 16% 72%; // softer green tint
+    // --hsl-primary-100: 89 30% 92%; // very pale sage tint (approx #EFF1EC)
+    // --hsl-secondary-400: 36 25% 76%; // #D8CDB6 – warm beige
+    // --hsl-secondary-300: 36 30% 86%; // pale sand
+    // --hsl-secondary-100: 36 40% 94%; // very pale cream-beige
 
-    --hsl-sage-500: 89 15% 48%; // #4C5B4D – sage green
-    --col-sage-500: hsl(var(--hsl-sage-500));
+    /* Brand Colours: Option 2 – Soft Navy & Warm Ivory */
+    // --hsl-primary-500: 210 30% 25%; // #2A3A4D – deep navy
+    // --hsl-primary-400: 210 25% 40%; // #50667D – mid blue-grey
+    // --hsl-primary-300: 210 25% 60%; // #90A3B5 – pale blue-grey
+    // --hsl-primary-100: 210 25% 94%; // #E9EDF0 – very pale tint
+    // --hsl-secondary-400: 42 30% 85%; // #EDE2C8 – warm ivory
+    // --hsl-secondary-300: 42 40% 92%; // #F6F1E4 – softer ivory
+    // --hsl-secondary-100: 42 50% 96%; // #FBF9F1 – nearly white with warmth
 
-    --hsl-sage-400: 89 15% 61%; // #A2AC94 – accent green
-    --col-sage-400: hsl(var(--hsl-sage-400));
+    /* Brand Colours: Option 3 – Slate & Copper */
+    --hsl-primary-500: 210 10% 20%; // #333A42 – slate
+    --hsl-primary-400: 210 10% 40%; // #66707A – cool mid grey
+    --hsl-primary-300: 210 10% 70%; // #B3B8BC – soft grey
+    --hsl-primary-100: 210 10% 95%; // #F1F2F3 – off-white grey
+    --hsl-secondary-400: 24 60% 60%; // #D38A57 – copper
+    --hsl-secondary-300: 24 70% 75%; // #E9B592 – light copper
+    --hsl-secondary-100: 24 80% 90%; // #F6E2D0 – peachy tint
 
-    --hsl-sage-300: 89 16% 72%; // softer green tint
-    --col-sage-300: hsl(var(--hsl-sage-300));
-
-    --hsl-sage-100: 89 30% 92%; // very pale sage tint (approx #EFF1EC)
-    --col-sage-100: hsl(var(--hsl-sage-100));
-
-    --hsl-sand-400: 36 25% 76%; // #D8CDB6 – warm beige
-    --col-sand-400: hsl(var(--hsl-sand-400));
-
-    --hsl-sand-300: 36 30% 86%; // pale sand
-    --col-sand-300: hsl(var(--hsl-sand-300));
-
-    --hsl-sand-100: 36 40% 94%; // very pale cream-beige
-    --col-sand-100: hsl(var(--hsl-sand-100));
+    --col-primary-500: hsl(var(--hsl-primary-500));
+    --col-primary-400: hsl(var(--hsl-primary-400));
+    --col-primary-300: hsl(var(--hsl-primary-300));
+    --col-primary-100: hsl(var(--hsl-primary-100));
+    --col-secondary-400: hsl(var(--hsl-secondary-400));
+    --col-secondary-300: hsl(var(--hsl-secondary-300));
+    --col-secondary-100: hsl(var(--hsl-secondary-100));
 
     /* Font Sizes */
 

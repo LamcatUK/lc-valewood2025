@@ -47,7 +47,7 @@ $image_aos = 'Text/Image' === $order_field ? 'fade-left' : 'fade-right';
 				<?php
 				if ( get_field( 'title' ) ?? null ) {
 					?>
-				<h2 class="h3 text--sage-500 section-heading--start">
+				<h2 class="h3 text--primary-500 section-heading--start">
 						<?= esc_html( get_field( 'title' ) ); ?>
 				</h2>
 				 	<?php

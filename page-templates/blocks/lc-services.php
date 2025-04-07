@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 ?>
 <section class="section-services">
 	<div class="container">
-   		<h2 class="text--sage-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
+   		<h2 class="text--primary-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
 		<div class="services-grid">
 			<?php
 			$c = 0;

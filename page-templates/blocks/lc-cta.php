@@ -21,7 +21,7 @@ $phone = get_field( 'contact_phone', 'option' );
 			<div class="mb-4">
 				<a href="<?= esc_url( $cta_link['url'] ); ?>"
 				target="<?= esc_attr( $cta_link['target'] ); ?>"
-				class="button button-primary button--arrow"><?= esc_html( $cta_link['title'] ); ?></a>
+				class="button button-primary--light button--arrow"><?= esc_html( $cta_link['title'] ); ?></a>
 			</div>
 			<?= do_shortcode( '[contact_phone text="Call Us on ' . $phone . '" class="phone-link"]' ); ?>
 		</div>

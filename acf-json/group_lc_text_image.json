@@ -87,11 +87,7 @@
                 "id": ""
             },
             "default_value": "white",
-            "allowed_colors": [
-                "grey-100",
-                "sage-100",
-                "sand-100"
-            ],
+            "allowed_colors": "",
             "exclude_colors": "",
             "return_format": "slug",
             "allow_in_bindings": 1
@@ -183,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1743940562
+    "modified": 1744050401
 }

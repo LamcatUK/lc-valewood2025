@@ -27,7 +27,7 @@
         padding: 2rem 2rem 2.5rem;
         background-color: var(--col-light);
         border: 1px solid var(--col-grey-100);
-        border-left: 4px solid var(--col-sage-400);
+        border-left: 4px solid var(--col-primary-400);
         border-radius: var(--border-radius);
         box-shadow: 0 6px 24px hsla(0, 0%, 0%, 0.03);
 
@@ -51,8 +51,8 @@
             z-index: 2;
 
             .service-icon {
-                background-color: hsl(var(--hsl-sage-300) / 0.25);
-                color: var(--col-sage-500);
+                background-color: hsl(var(--hsl-primary-300) / 0.25);
+                color: var(--col-primary-500);
             }
         }
 
@@ -75,13 +75,13 @@
         justify-content: center;
         // width: 3.25rem;
         // height: 3.25rem;
-        background-color: hsl(var(--hsl-sage-300) / 0.15);
+        background-color: hsl(var(--hsl-primary-300) / 0.15);
         border-radius: 50%;
         // font-size: 1.5rem;
         font-size: 1.25rem;
         width: 2.75rem;
         height: 2.75rem;
-        color: var(--col-sage-400);
+        color: var(--col-primary-400);
         flex-shrink: 0;
         transition:
             background-color var(--transition),

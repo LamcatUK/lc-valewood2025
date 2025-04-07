@@ -8,7 +8,7 @@ header {
     }
 
     a.nav-link {
-        color: var(--col-sage-400);
+        color: var(--col-primary-400);
         font-size: var(--fs-400);
         font-weight: var(--fw-700);
         letter-spacing: 0.1em;
@@ -19,7 +19,7 @@ header {
 
         @media (min-width: 992px) {
             &:hover {
-                color: var(--col-sage-300);
+                color: var(--col-primary-300);
             }
         }
     }
@@ -49,11 +49,11 @@ header {
         }
 
         a.nav-link {
-            color: var(--col-sage-400);
+            color: var(--col-primary-400);
 
             @media (min-width: 992px) {
                 &:hover {
-                    color: var(--col-sage-300);
+                    color: var(--col-primary-300);
                 }
             }
         }
@@ -62,7 +62,7 @@ header {
         .current_page_parent > .nav-link,
         .dropdown.current-page-ancestor > .nav-link,
         .dropdown.current-menu-item > .nav-link {
-            color: var(--col-sage-300);
+            color: var(--col-primary-300);
         }
     }
 
@@ -74,7 +74,7 @@ header {
     .current_page_parent > .nav-link,
     .dropdown.current-page-ancestor > .nav-link,
     .dropdown.current-menu-item > .nav-link {
-        color: var(--col-sage-300);
+        color: var(--col-primary-300);
     }
 
     .contact-info {

@@ -8,9 +8,10 @@
     a {
         color: var(--col-grey-200);
         text-decoration: none;
+        transition: color var(--transition);
 
         &:hover {
-            color: var(--col-sage-300);
+            color: var(--col-primary-300);
         }
     }
 
@@ -56,7 +57,7 @@
             transition: color var(--transition);
 
             &:hover {
-                color: var(--col-sage-300) !important;
+                color: var(--col-primary-300) !important;
             }
         }
 
