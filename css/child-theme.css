@@ -22715,7 +22715,6 @@ header .order-2 {
 }
 .section-featured-projects .projects-header h2, .section-featured-projects .projects-header .h2 {
   font-size: var(--fs-700);
-  color: var(--col-primary-400);
 }
 .section-featured-projects .projects-header p {
   font-size: var(--fs-500);
