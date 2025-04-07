@@ -21991,7 +21991,7 @@ strong {
   background-color: var(--col-grey-100);
 }
 
-/* Sage */
+/* Primary */
 .has-primary-500-color,
 .text--primary-500 {
   color: var(--col-primary-500);
@@ -22027,7 +22027,8 @@ strong {
   background-color: var(--col-primary-100);
 }
 
-/* Sand */
+/* Secondary */
+.text--sage-500,
 .has-secondary-400-color,
 .text--secondary-400 {
   color: var(--col-secondary-400);
@@ -22506,10 +22507,10 @@ header .order-2 {
   justify-content: center;
   background-color: hsl(var(--hsl-primary-300)/0.15);
   border-radius: 50%;
-  font-size: 1.25rem;
-  width: 2.75rem;
-  height: 2.75rem;
-  color: var(--col-primary-400);
+  font-size: 2rem;
+  width: 4rem;
+  aspect-ratio: 1;
+  color: var(--col-secondary-400);
   flex-shrink: 0;
   transition: background-color var(--transition), color var(--transition);
 }
@@ -22636,7 +22637,7 @@ header .order-2 {
 }
 .section-why-choose .benefit-icon {
   font-size: 2rem;
-  width: 3rem;
+  width: 4rem;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
@@ -22644,7 +22645,7 @@ header .order-2 {
   margin-inline: auto;
   border-radius: 50%;
   background-color: hsl(var(--hsl-primary-300)/0.15);
-  color: var(--col-primary-400);
+  color: var(--col-secondary-400);
 }
 @media (max-width: 991.98px) {
   .section-why-choose .benefit-card {
