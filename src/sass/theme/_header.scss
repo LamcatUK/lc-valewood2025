@@ -37,6 +37,7 @@ header {
         display: inline-block;
         aspect-ratio: 1;
         width: 80px;
+        min-width: 80px;
         max-width: 100%;
     }
 
@@ -82,5 +83,9 @@ header {
             text-decoration: none;
             color: var(--col-dark);
         }
+    }
+
+    .order-2 {
+        flex: 1;
     }
 }

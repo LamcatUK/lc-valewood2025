@@ -22210,6 +22210,7 @@ header .logo {
   display: inline-block;
   aspect-ratio: 1;
   width: 80px;
+  min-width: 80px;
   max-width: 100%;
 }
 header.scrolled {
@@ -22245,6 +22246,9 @@ header .dropdown.current-menu-item > .nav-link {
 header .contact-info a {
   text-decoration: none;
   color: var(--col-dark);
+}
+header .order-2 {
+  flex: 1;
 }
 
 .footer {

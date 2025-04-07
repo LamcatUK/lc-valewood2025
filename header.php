@@ -170,7 +170,7 @@ session_start();
                     </div>
 
                     <!-- Mobile Toggle -->
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler d-lg-none me-0" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
