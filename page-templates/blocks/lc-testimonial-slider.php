@@ -12,7 +12,7 @@ $GLOBALS['skip_core_block_wrapping'] = true;
 ?>
 <section class="section-testimonials">
 	<div class="container">
-		<h2 class="h2 ff-heading text--primary-400 text-center" data-aos="fade">What our clients say</h2>
+		<h2 class="text--primary-500 section-heading" data-aos="fade">What our clients say</h2>
 
 		<div class="splide testimonial-slider" role="region" aria-label="Client testimonials">
 			<div class="splide__track">
