@@ -22740,6 +22740,10 @@ header .order-2 {
   transform: scale(1.03);
 }
 
+.text_image img {
+  border-radius: var(--border-radius);
+}
+
 .masonry-gallery {
   margin: 0 -0.5rem;
   display: flex;
