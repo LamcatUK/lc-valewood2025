@@ -2,4 +2,7 @@
     .container {
         border-bottom: 1px solid var(--col-grey-100);
     }
+    img {
+        border-radius: var(--border-radius);
+    }
 }

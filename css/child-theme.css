@@ -22444,6 +22444,9 @@ header .order-2 {
 .section-intro .container {
   border-bottom: 1px solid var(--col-grey-100);
 }
+.section-intro img {
+  border-radius: var(--border-radius);
+}
 
 .section-services {
   padding-block: 4rem;
