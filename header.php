@@ -153,7 +153,7 @@ session_start();
                                 array(
                                     'theme_location' => 'primary_nav',
                                     'container'      => false,
-                                    'menu_class'     => 'navbar-nav w-100 justify-content-center align-items-lg-center',
+                                    'menu_class'     => 'navbar-nav w-100 justify-content-center align-items-lg-center text-center pb-5 pb-lg-0',
                                     'fallback_cb'    => '',
                                     'depth'          => 3,
                                     'walker'         => new Understrap_WP_Bootstrap_Navwalker(),

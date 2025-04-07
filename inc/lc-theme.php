@@ -285,17 +285,25 @@ add_action(
 	}
 );
 
-// phpcs:disable
-// function add_custom_menu_item($items, $args)
-// {
-//     if ($args->theme_location == 'primary_nav') {
-//         $new_item = '<li class="menu-item menu-item-type-post_tyep menu-item-object-page nav-item"><a href="' . esc_url(home_url('/search/')) . '" class="nav-link" title="Search"><span class="icon-search"></span></a></li>';
-//         $items .= $new_item;
-//     }
-//     return $items;
-// }
-// add_filter('wp_nav_menu_items', 'add_custom_menu_item', 10, 2);
-// phpcs:enable
+/**
+ * Adds custom menu items to the primary navigation menu.
+ *
+ * This function appends custom menu items, such as contact phone and email links,
+ * to the primary navigation menu when it is being rendered.
+ *
+ * @param string $items The HTML list content for the menu items.
+ * @param object $args  An object containing wp_nav_menu() arguments.
+ * @return string The modified HTML list content for the menu items.
+ */
+function add_custom_menu_item( $items, $args ) {
+    if ( $args->theme_location == 'primary_nav' ) {
+        $new_item  = '<li class="d-lg-none menu-item nav-item">' . do_shortcode( '[contact_phone icon="true" class="nav-link"]' ) . '</li>';
+        $new_item .= '<li class="d-lg-none menu-item nav-item">' . do_shortcode( '[contact_email icon="true" class="nav-link" text="Email Us"]' ) . '</li>';
+        $items    .= $new_item;
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_custom_menu_item', 10, 2 );
 
 /**
  * Extracts the first heading, introductory paragraphs, and the rest of the content from the given HTML content.
