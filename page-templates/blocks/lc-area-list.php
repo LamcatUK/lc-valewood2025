@@ -20,7 +20,7 @@ if ( empty( $child_pages ) ) {
 
 ?>
 <div class="container">
-	<h2 class="h3 text--sage-500 section-heading" data-aos="fade-up"><?= esc_html( get_field( 'title' ) ); ?></h2>
+	<h2 class="h3 text-primmary-500 section-heading" data-aos="fade-up"><?= esc_html( get_field( 'title' ) ); ?></h2>
 	<div class="row g-5">
 		<?php
 		$aos_delay = 100;

@@ -12,14 +12,14 @@ $image  = get_field( 'image' );
 $center = $image ? 'text-start' : 'text-center';
 ?>
 <section class="section-intro">
-	<div class="container py-5 <?= $center ?>" data-aos="fade-up">
+	<div class="container py-5 <?= esc_attr( $center ); ?>" data-aos="fade-up">
 		<?php
 		if ( $image ) {
 			?>
-   		<h2 class="text--sage-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
+   		<h2 class="text--primary-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
 		<div class="row g-5">
 			<div class="col-md-7">
-				<p class="lead fs-500 text--dark <?= $center ?>"><?= esc_html( get_field( 'lead' ) ); ?></p>
+				<p class="lead fs-500 text--dark <?= esc_attr( $center ); ?>"><?= esc_html( get_field( 'lead' ) ); ?></p>
 				<p class="fs-400 text--grey-400"><?= esc_html( get_field( 'content' ) ); ?></p>
 				<?php
 				if ( $button ) {
@@ -36,7 +36,7 @@ $center = $image ? 'text-start' : 'text-center';
 			<?php
 		} else {
 			?>
-		<h2 class="text--sage-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
+		<h2 class="text--primary-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
 		<p class="lead fs-500 text--dark w-constrained mx-auto"><?= esc_html( get_field( 'lead' ) ); ?></p>
 		<p class="fs-400 text--grey-400 w-constrained mx-auto"><?= esc_html( get_field( 'content' ) ); ?></p>	
 			<?php

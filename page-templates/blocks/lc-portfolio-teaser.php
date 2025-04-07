@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 <section class="section-featured-projects">
  	<div class="container">
 		<div class="projects-header text-center mb-4" data-aos="fade-up">
-			<h2 class="text--sage-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
+			<h2 class="text--primary-500 section-heading"><?= esc_html( get_field( 'title' ) ); ?></h2>
 			<p class="lead text--grey-400"><?= wp_kses_post( get_field( 'intro' ) ); ?></p>
 		</div>
 

@@ -30,7 +30,7 @@ if ( $testimonials->have_posts() ) {
 						<div class="testimonial-text">
 							<?php echo wp_kses_post( $cleaned ); ?>
 						</div>
-						<div class="testimonial-author fw-700 text--sage-500">
+						<div class="testimonial-author fw-700 text--primary-500">
 							— <?php echo esc_html( $client ); ?>
 						</div>
 					</div>
