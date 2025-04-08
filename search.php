@@ -17,7 +17,7 @@ $theme      = 'default';
 <main id="main">
 	<!-- page_title -->
 	<div class="container-xl pb-5">
-		<h1><?= esc_html( $page_title ); ?></h1>
+		<h1><?= wp_kses_post( $page_title ); ?></h1>
 		<?= wp_kses_post( do_blocks( '<!-- wp:search {"label":"Enter your search term","showLabel":true,"buttonText":"Search","placeholder":"Search term goes here"} /-->' ) ); ?>
 	</div>
 	<div class="container-xl pb-4">
