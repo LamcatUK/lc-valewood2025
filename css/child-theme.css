@@ -22707,7 +22707,7 @@ header .order-2 {
   transition: color var(--transition);
 }
 .section-cta-banner .phone-link:hover {
-  color: var(--col-light);
+  color: var(--col-primary-100);
 }
 
 .section-featured-projects {
