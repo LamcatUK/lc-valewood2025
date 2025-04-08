@@ -22470,6 +22470,7 @@ header .order-2 {
   flex-direction: row;
   align-items: flex-start;
   gap: 1.25rem;
+  flex: 1;
   padding: 2rem 2rem 2.5rem;
   background-color: var(--col-light);
   border: 1px solid var(--col-grey-100);
