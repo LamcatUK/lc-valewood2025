@@ -387,3 +387,25 @@ function extract_intro_content( $content ) {
 
 
 add_filter( 'wpcf7_autop_or_not', '__return_false' );
+
+
+add_filter(
+    'wpcf7_validate',
+    function ( $result, $tags ) {
+	    $submission = WPCF7_Submission::get_instance();
+	    if ( ! $submission ) {
+    		return $result;
+	    }
+
+	    $data = $submission->get_posted_data();
+
+    	// Check if honeypot field has been filled (spam).
+    	if ( ! empty( $data[ 'your-website' ] ) ) {
+	    	$result->invalidate('your-website', 'Spam detected.'); // Optional message.
+	    }
+
+    	return $result;
+    },
+    10,
+    2
+);
