@@ -24,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 				foreach ( $projects as $project ) {
 					?>
 					<li class="splide__slide">
-					<?= wp_get_attachment_image( $project, 'large' ); ?>
+						<a href="/portfolio/"><?= wp_get_attachment_image( $project, 'large' ); ?></a>
 					</li>
 					<?php
 				}
