@@ -186,48 +186,76 @@ session_start();
         {
         "@type": "Service",
         "serviceType": "Bathroom Design",
+        "description": "Tailored bathroom design services to create your ideal space.",
         "provider": {
             "@type": "LocalBusiness",
             "name": "Valewood Bathrooms",
-            "url": "https://www.valewoodbathrooms.co.uk/"
+            "url": "https://www.valewoodbathrooms.co.uk/",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shelley's Farm, Valewood Lane",
+            "addressLocality": "Barns Green",
+            "addressRegion": "West Sussex",
+            "postalCode": "RH13 0QJ",
+            "addressCountry": "GB"
+            },
+            "telephone": "+44 7581 858426"
         },
         "areaServed": {
             "@type": "AdministrativeArea",
             "name": "West Sussex"
-        },
-        "description": "Tailored bathroom design services to create your ideal space."
+        }
         },
         {
         "@type": "Service",
         "serviceType": "Bathroom Renovation",
+        "description": "Comprehensive renovation services to transform your bathroom.",
         "provider": {
             "@type": "LocalBusiness",
             "name": "Valewood Bathrooms",
-            "url": "https://www.valewoodbathrooms.co.uk/"
+            "url": "https://www.valewoodbathrooms.co.uk/",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shelley's Farm, Valewood Lane",
+            "addressLocality": "Barns Green",
+            "addressRegion": "West Sussex",
+            "postalCode": "RH13 0QJ",
+            "addressCountry": "GB"
+            },
+            "telephone": "+44 7581 858426"
         },
         "areaServed": {
             "@type": "AdministrativeArea",
             "name": "West Sussex"
-        },
-        "description": "Comprehensive renovation services to transform your bathroom."
+        }
         },
         {
         "@type": "Service",
         "serviceType": "Bathroom Installation",
+        "description": "Professional installation of bathroom fixtures and fittings.",
         "provider": {
             "@type": "LocalBusiness",
             "name": "Valewood Bathrooms",
-            "url": "https://www.valewoodbathrooms.co.uk/"
+            "url": "https://www.valewoodbathrooms.co.uk/",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shelley's Farm, Valewood Lane",
+            "addressLocality": "Barns Green",
+            "addressRegion": "West Sussex",
+            "postalCode": "RH13 0QJ",
+            "addressCountry": "GB"
+            },
+            "telephone": "+44 7581 858426"
         },
         "areaServed": {
             "@type": "AdministrativeArea",
             "name": "West Sussex"
-        },
-        "description": "Professional installation of bathroom fixtures and fittings."
+        }
         }
     ]
 }
 </script>
+
         <?php
     }
     ?>
