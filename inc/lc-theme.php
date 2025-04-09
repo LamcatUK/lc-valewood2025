@@ -400,8 +400,8 @@ add_filter(
 	    $data = $submission->get_posted_data();
 
     	// Check if honeypot field has been filled (spam).
-    	if ( ! empty( $data[ 'your-website' ] ) ) {
-	    	$result->invalidate('your-website', 'Spam detected.'); // Optional message.
+    	if ( ! empty( $data['your-website'] ) ) {
+	    	$result->invalidate( 'your-website', 'Spam detected.' ); // Optional message.
 	    }
 
     	return $result;
