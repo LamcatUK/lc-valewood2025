@@ -392,19 +392,93 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
 add_filter(
     'wpcf7_validate',
     function ( $result, $tags ) {
-	    $submission = WPCF7_Submission::get_instance();
-	    if ( ! $submission ) {
-    		return $result;
-	    }
+        $submission = WPCF7_Submission::get_instance();
+        if ( ! $submission ) {
+            return $result;
+        }
 
-	    $data = $submission->get_posted_data();
+        $data = $submission->get_posted_data();
 
-    	// Check if honeypot field has been filled (spam).
-    	if ( ! empty( $data['your-website'] ) ) {
-	    	$result->invalidate( 'your-website', 'Spam detected.' ); // Optional message.
-	    }
+        // Honeypot field check (spam detection).
+        if ( ! empty( $data['your-website'] ) ) {
+            $result->invalidate( 'your-website', 'Spam detected.' );
+        }
 
-    	return $result;
+        // Check for excessive links in the message field.
+        if ( isset( $data['your-message'] ) && substr_count( $data['your-message'], 'http' ) > 3 ) {
+            $result->invalidate( 'your-message', 'Too many links detected. Possible spam.' );
+        }
+
+        // Validate email format.
+        if ( isset( $data['your-email'] ) && ! filter_var( $data['your-email'], FILTER_VALIDATE_EMAIL ) ) {
+            $result->invalidate( 'your-email', 'Invalid email address.' );
+        }
+
+        // Time-based spam check (ensure form isn't submitted too quickly).
+        $start_time = isset( $_SESSION['form_start_time'] ) ? $_SESSION['form_start_time'] : 0;
+        $current_time = time();
+        if ( $current_time - $start_time < 15 ) { // Less than 5 seconds.
+            $result->invalidate( 'your-message', 'Form submitted too quickly. Possible spam.' );
+        }
+
+        return $result;
+    },
+    10,
+    2
+);
+
+// Start time for form submission (to be set when the form is loaded).
+add_action(
+    'wpcf7_enqueue_scripts',
+    function () {
+        if ( session_status() === PHP_SESSION_NONE ) {
+            session_start();
+        }
+        $_SESSION['form_start_time'] = time();
+    }
+);
+
+// Ensure session starts early in the WordPress lifecycle.
+add_action(
+    'init',
+    function () {
+        if ( session_status() === PHP_SESSION_NONE ) {
+            session_start();
+        }
+    }
+);
+
+// Use cookies as a fallback for form start time.
+add_action(
+    'wpcf7_enqueue_scripts',
+    function () {
+        if ( session_status() === PHP_SESSION_NONE ) {
+            session_start();
+        }
+        $start_time = time();
+        $_SESSION['form_start_time'] = $start_time;
+        setcookie( 'form_start_time', $start_time, time() + 3600, '/' ); // Cookie valid for 1 hour.
+    }
+);
+
+// Update validation to check both session and cookie.
+add_filter(
+    'wpcf7_validate',
+    function ( $result, $tags ) {
+        $submission = WPCF7_Submission::get_instance();
+        if ( ! $submission ) {
+            return $result;
+        }
+
+        $data = $submission->get_posted_data();
+
+        $start_time   = isset( $_SESSION['form_start_time'] ) ? intval( $_SESSION['form_start_time'] ) : ( isset( $_COOKIE['form_start_time'] ) ? intval( $_COOKIE['form_start_time'] ) : 0 );
+        $current_time = time();
+        if ( $current_time - $start_time < 5 ) { // Less than 5 seconds.
+            $result->invalidate( 'your-message', 'Form submitted too quickly. Possible spam.' );
+        }
+
+        return $result;
     },
     10,
     2
