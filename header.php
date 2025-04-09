@@ -93,27 +93,144 @@ session_start();
 	}
 
 	wp_head();
-	?>
-    <script type="application/ld+json">
+
+    if ( is_front_page() ) {
+        ?>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Valewood Bathrooms",
+    "url": "https://www.valewoodbathrooms.co.uk/",
+    "logo": "https://www.valewoodbathrooms.co.uk/wp-content/theme/lc-valewood2025/img/valewood-logo.jpg",
+    "description": "Valewood Bathrooms offers bespoke bathroom renovation, design, and installation services across West Sussex, tailored to your space and needs.",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shelley's Farm, Valewood Lane",
+        "addressLocality": "Barns Green",
+        "addressRegion": "West Sussex",
+        "postalCode": "RH13 0QJ",
+        "addressCountry": "GB"
+    },
+    "telephone": "+44 7581 858426",
+    "email": "hello@valewoodbathrooms.co.uk",
+    "sameAs": [
+        "https://www.facebook.com/valewoodbathrooms",
+        "https://www.google.com/maps?cid=ChIJZfEPPzbBdUgRQy5bcknd9XQ"
+    ],
+    "openingHoursSpecification": [
         {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Valewood Bathrooms",
-            "url": "https://www.valewoodbathrooms.co.uk/",
-            "logo": "https://www.valewoodbathrooms.co.uk/wp-content/theme/lc-valewood2025/img/valewood-logo.jpg",
-            "description": "---",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "---",
-                "addressLocality": "---",
-                "addressRegion": "England",
-                "postalCode": "---",
-                "addressCountry": "UK"
-            },
-            "telephone": "+44 (0) --- --- ----",
-            "email": "hello@valewoodbathrooms.co.uk"
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
         }
-    </script>
+    ],
+    "areaServed": [
+        { "@type": "Place", "name": "Horsham" },
+        { "@type": "Place", "name": "Southwater" },
+        { "@type": "Place", "name": "Billingshurst" },
+        { "@type": "Place", "name": "Pulborough" },
+        { "@type": "Place", "name": "Storrington" },
+        { "@type": "Place", "name": "West Chiltington" },
+        { "@type": "Place", "name": "Barns Green" },
+        { "@type": "Place", "name": "West Sussex" }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bathroom Services",
+        "itemListElement": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Bathroom Design",
+            "description": "Tailored bathroom design services to help you create a stylish and functional space."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Bathroom Renovation",
+            "description": "Full and partial bathroom renovation projects, from retiling to layout changes and modernisation."
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+            "@type": "Service",
+            "name": "Bathroom Installation",
+            "description": "Expert installation of bathrooms including plumbing, fixtures, tiling, and finishing."
+            }
+        }
+        ]
+    }
+}
+</script>
+        <?php
+    }
+    if ( is_page( 'services' ) ) {
+        ?>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@graph": [
+        {
+        "@type": "Service",
+        "serviceType": "Bathroom Design",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Valewood Bathrooms",
+            "url": "https://www.valewoodbathrooms.co.uk/"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "West Sussex"
+        },
+        "description": "Tailored bathroom design services to create your ideal space."
+        },
+        {
+        "@type": "Service",
+        "serviceType": "Bathroom Renovation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Valewood Bathrooms",
+            "url": "https://www.valewoodbathrooms.co.uk/"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "West Sussex"
+        },
+        "description": "Comprehensive renovation services to transform your bathroom."
+        },
+        {
+        "@type": "Service",
+        "serviceType": "Bathroom Installation",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Valewood Bathrooms",
+            "url": "https://www.valewoodbathrooms.co.uk/"
+        },
+        "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "West Sussex"
+        },
+        "description": "Professional installation of bathroom fixtures and fittings."
+        }
+    ]
+}
+</script>
+        <?php
+    }
+    ?>
 </head>
 <body <?php body_class(); ?>
     <?php understrap_body_attributes(); ?>>
